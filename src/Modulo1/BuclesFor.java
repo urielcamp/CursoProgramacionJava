@@ -231,6 +231,32 @@ public class BuclesFor {
         System.out.println("------------------------------------------");
         System.out.println();
 
+        //Resolver la serie de Collatz para un número ingresado.
+
+        int m = 3;
+        int numb = 0;
+
+        for (; m != 1;){
+            if (m%2==0){
+                m = m/2;
+            }else {
+                m = 3*m + 1;
+            }
+
+            System.out.print(m + " ");
+        }
+
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("Ejercicio 2");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+
+        //Resolver el problema de la serie de Tribonacci.
+
+
 
 
 
