@@ -177,6 +177,64 @@ public class BuclesFor {
         }
 
 
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("Ejercicio 3");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+        //Calcular la media de una lista de números ingresados por el usuario.
+
+        int usNum = 10;
+        int auxil = 0;
+        for (int i = 1; i<= usNum; i++){
+            auxil += i;
+        }
+
+
+        System.out.println("La media de " + usNum + " es: " + auxil/usNum);
+
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("Ejercicio 4");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+        //Generar los primeros 20 números de la serie Fibonacci.
+
+        int[] fibExt = new int[20];
+
+        fibExt[0] = 1;
+        fibExt[1] = 1;
+
+        int afib = 0;
+
+        for (int i = 2; i < fibExt.length; i++){
+            afib = fibExt[i - 1] + fibExt[i -2];
+            fibExt[i] = afib;
+        }
+
+        System.out.println(Arrays.toString(fibExt));
+
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("DIFICULTAD DIFICIL");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("Ejercicio 1");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+
+
+
+
 
 
 
