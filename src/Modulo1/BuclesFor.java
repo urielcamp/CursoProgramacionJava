@@ -7,6 +7,13 @@ public class BuclesFor {
 
     public static void main(String[] args) {
 
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("DIFICULTAD FACIL");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+        System.out.println();
         System.out.println("------------------------------------------");
         System.out.println("Ejercicio 1");
         System.out.println("------------------------------------------");
@@ -100,6 +107,78 @@ public class BuclesFor {
         }
 
         System.out.println(Arrays.toString(fib));
+
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("DIFICULTAD MEDIA");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("Ejercicio 1");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+        //Imprimir los números primos entre 1 y 50.
+
+
+        for (int i = 2; i <= 50; i++){
+            boolean esPrimo = true;
+
+            for (int j = 2; j <= Math.sqrt(i); j++){
+                if (i% j == 0){
+                    esPrimo = false;
+                    break;
+                }
+            }
+
+            if (esPrimo){
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.println("Ejercicio 2");
+        System.out.println("------------------------------------------");
+        System.out.println();
+
+        //Comprobar si un número es perfecto.
+
+
+        boolean esPerfect = true;
+        int numero = 496;
+        double aux = 0;
+
+        for (int i = 1; i <= numero; i++){
+
+            if (numero%i == 0){
+                aux += i;
+            }
+
+
+            if (aux == numero){
+                esPerfect = true;
+                break;
+            }else {
+                esPerfect = false;
+            }
+
+
+        }
+
+        if (esPerfect){
+            System.out.println(numero + " es perfecto");
+        }else {
+            System.out.println(numero + " no es perfecto");
+        }
+
+
+
+
 
 
 
